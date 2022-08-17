@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-card {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col1 {
+    background-color: hsl(244, 38%, 16%);
+    /* border: 1px solid white; */
+    border-radius: 10px 0 0 10px;
+    width: 90%;
+    padding: 60px 0 60px 60px;
+}
+
+
+.col2 {
+    /* border: 1px solid white; */
+    background-image: url(../images/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+}
+.col2::before{
+    content: '';
+    background-color: hsl(277, 64%, 61%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.4;
+}
+
+.col1 h1{
+    width: 70%;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+}
+.col1 h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.col1 .row2{
+    width:65%;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 90px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card-bottom{
+    display: flex;
+}
+.card-bottom h3{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+.card-bottom p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    font-family: 'Lexend deca', sans-serif;
+}
+.marg-right{
+    margin-right: 40px;
+}
+
+
+/* Media Query */
+@media only screen and (max-width:600px){
+    .card{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .col2 {
+        background-image: url(../images/image-header-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 480px;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        width: 80%;
+    }
+    .col1{
+        width: 30%;
+    }
+}
